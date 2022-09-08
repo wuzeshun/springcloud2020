@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-provider-pay-8001" />
+        <module name="cloud-provider-pay-8002" />
+        <module name="cloud-config-server-3344" />
+        <module name="Spring-Cloud-Api" />
+        <module name="cloud-stream-consumer-81" />
+        <module name="cloud-stream-consumer-80" />
+        <module name="cloud-hystrix-service-provider-8001" />
+        <module name="cloud-hystrix-dashboard-9001" />
+        <module name="cloud-gateway-9527" />
+        <module name="server-consumer-consul-80" />
+        <module name="cloud-consumer-order-80" />
+        <module name="cloud-feign-hystrix-consumer-80" />
+        <module name="SpringCloud-Eureka-7001" />
+        <module name="SpringCloud-Eureka-7002" />
+        <module name="cloud-procider-server-consul-8003" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-config-client-3366" />
+        <module name="cloud-stream-provider-8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-hystrix-consumer-80" target="1.8" />
+      <module name="cloud-provider-server-consul-8006" target="1.8" />
+      <module name="cloud-provider-server-consul-8500" target="1.8" />
+      <module name="springcloud-config-3344" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

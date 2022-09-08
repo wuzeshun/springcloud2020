@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzs.springcloud.dao.PayMapper">
+
+    <resultMap id="resMap" type="Payment">
+        <result column="id" property="id"/>
+        <result column="serial" property="serial" />
+        <result column="serial" property="dataSource"/>
+    </resultMap>
+    <select id="queryById" resultType="PayMent" parameterType="long">
+        select * from paystatue where id=#{id};
+    </select>
+
+    <select id="queryAll" resultMap="resMap">
+        select id,serial,data_source from paystatue
+    </select>
+
+    <insert id="create" parameterType="PayMent" useGeneratedKeys="true" keyProperty="id">
+        insert into dept(serial,data_source)values (#{serial},#{data_source});
+    </insert>
+</mapper>

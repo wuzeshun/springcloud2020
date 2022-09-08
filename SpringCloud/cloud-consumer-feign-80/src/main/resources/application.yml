@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka701.com:7001/eureka/,http://eureka702.com:7002/eureka/
+    register-with-eureka: false
+spring:
+  application:
+    name: consumer-server-80
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    com/wzs/springcloud/service/ProviderService: debug
